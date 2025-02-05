@@ -34,6 +34,12 @@ export const execute: executeCommand = async (interaction) => {
   //});
   //interaction.reply({ content: `Successfully purged 5 messages!`, ephemeral: true });
   //interaction.reply({ content: `Successfully purged ${amount} messages!`, ephemeral: true });
+  return {
+    type: 4,
+    data: {
+      content: `pong! ${interaction.member?.user.username}`,
+    },
+  };
 };
 /*export const execute: executeCommand = async (interaction) => {
   return {
