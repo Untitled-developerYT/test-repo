@@ -32,10 +32,17 @@ export const execute: executeCommand = async (interaction) => {
   //    console.error(err);
   //    interaction.reply({ content: 'There was an error trying to purge messages in this channel!', ephemeral: true });
   //});
-  interaction.reply({ content: `Successfully purged 5 messages!`, ephemeral: true });
+  //interaction.reply({ content: `Successfully purged 5 messages!`, ephemeral: true });
   //interaction.reply({ content: `Successfully purged ${amount} messages!`, ephemeral: true });
 };
-
+/*export const execute: executeCommand = async (interaction) => {
+  return {
+    type: 4,
+    data: {
+      content: `pong! ${interaction.member?.user.username}`,
+    },
+  };
+};*/
 
 
 
