@@ -10,17 +10,7 @@ module.exports = {
             .setRequired(true)),
         
                     
-    async execute(interaction) {
-        const amount = interaction.options.getInteger('amount');
-        if (amount < 1 || amount > 100) {
-            return interaction.reply({ content: 'You must provide a number between 1 and 100', ephemeral: true });
-        }
-        interaction.channel.bulkDelete(amount, true).catch(err => {
-            console.error(err);
-            interaction.reply({ content: 'There was an error trying to purge messages in this channel!', ephemeral: true });
-        });
-        interaction.reply({ content: `Successfully purged ${amount} messages!`, ephemeral: true });
-    },
+    
 };
 export const execute: executeCommand = async (interaction) => {
   // You have access to do interaction object
@@ -34,9 +24,9 @@ const amount = interaction.options.getInteger('amount');
         }
         interaction.channel.bulkDelete(amount, true).catch(err => {
             console.error(err);
-            interaction.reply({ content: 'There was an error trying to purge messages in this channel!', ephemeral: true });
+            //interaction.reply({ content: 'There was an error trying to purge messages in this channel!', ephemeral: true });
         });
-        interaction.reply({ content: `Successfully purged ${amount} messages!`, ephemeral: true });
+        //interaction.reply({ content: `Successfully purged ${amount} messages!`, ephemeral: true });
     },
   // you should return a APIInteractionResponse
   // https://discord-api-types.dev/api/discord-api-types-v10#APIApplicationCommandInteraction
