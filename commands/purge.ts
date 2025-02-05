@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-
+import { executeCommand } from "@/types";
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('purge')
