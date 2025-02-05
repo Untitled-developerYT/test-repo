@@ -27,7 +27,7 @@ const amount = interaction.options.getInteger('amount');
             //interaction.reply({ content: 'There was an error trying to purge messages in this channel!', ephemeral: true });
         });
         //interaction.reply({ content: `Successfully purged ${amount} messages!`, ephemeral: true });
-    },
+    }
   // you should return a APIInteractionResponse
   // https://discord-api-types.dev/api/discord-api-types-v10#APIApplicationCommandInteraction
   //return {
