@@ -1,17 +1,12 @@
 const { SlashCommandBuilder } = require('discord.js');
 import { executeCommand } from "@/types";
-module.exports = {
-    data: new SlashCommandBuilder()
-        .setName('purge')
-        .setDescription('Purge a certain amount of messages')
-        .addIntegerOption(option => 
-            option.setName('amount')
-            .setDescription('The amount of messages to purge')
-            .setRequired(true)),
-        
-                    
-    
-};
+export const register = new SlashCommandBuilder()
+    .setName('purge')
+    .setDescription('Purge a certain amount of messages')
+    .addIntegerOption(option => 
+        option.setName('amount')
+        .setDescription('The amount of messages to purge')
+        .setRequired(true)),
 export const execute: executeCommand = async (interaction) => {
   // You have access to do interaction object
   // https://discord.com/developers/docs/interactions/receiving-and-responding#interaction-object
