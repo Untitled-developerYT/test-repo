@@ -21,7 +21,7 @@ export const execute: executeCommand = async (interaction) => {
 
   // Do your bot logic here
   // You can even connect to a database
-
+/*
   // you should return a APIInteractionResponse
   // https://discord-api-types.dev/api/discord-api-types-v10#APIApplicationCommandInteraction
     const amount = 0//interaction.data?.options?.getInteger('amount');
@@ -32,7 +32,7 @@ export const execute: executeCommand = async (interaction) => {
         console.error(err);
         interaction.reply({ content: 'There was an error trying to purge messages in this channel!', ephemeral: true });
     });
-    interaction.reply({ content: `Successfully purged ${amount} messages!`, ephemeral: true });
+    interaction.reply({ content: `Successfully purged ${amount} messages!`, ephemeral: true });*/
   return {
     type: 4,
     data: {
