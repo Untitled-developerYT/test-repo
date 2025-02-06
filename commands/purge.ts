@@ -24,7 +24,7 @@ export const execute: executeCommand = async (interaction) => {
 
   // you should return a APIInteractionResponse
   // https://discord-api-types.dev/api/discord-api-types-v10#APIApplicationCommandInteraction
-  const amount = register.options.getInteger('amount');
+  const amount = interaction.options.getInteger('amount');
   //if (amount < 1 || amount > 100) {
   //  interaction.reply({ content: 'You must provide a number between 1 and 100', ephemeral: true });
   //}
