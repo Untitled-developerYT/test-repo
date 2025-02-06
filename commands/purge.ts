@@ -11,7 +11,7 @@ module.exports = {
             .setRequired(true)),
         
                     
-    async const execute: executeCommand = execute(interaction) {
+    const execute: executeCommand = async (interaction) {
         const amount = interaction.options.getInteger('amount');
         if (amount < 1 || amount > 100) {
             return interaction.reply({ content: 'You must provide a number between 1 and 100', ephemeral: true });
