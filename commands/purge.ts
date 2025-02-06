@@ -1,6 +1,6 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
 import { executeCommand } from "@/types";
-function stringify (x) {
+function stringify (x: any) {
     return (Object.prototype.toString.call(x));
 }
 // to add a command go to ./commands folder and create a new ts file
