@@ -35,7 +35,7 @@ export const execute: executeCommand = async (interaction) => {
         interaction.reply({ content: 'There was an error trying to purge messages in this channel!', ephemeral: true });
     });
     interaction.reply({ content: `Successfully purged ${amount} messages!`, ephemeral: true });*/
-  var data = JSON.stringify(interaction.data)
+  var data = JSON.stringify(interaction.data?.options)
   return {
     type: 4,
     data: {
